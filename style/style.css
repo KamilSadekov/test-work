@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: 18px;
+    font-family: 'IBM Plex Sans',
+    sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+div.inform{
+    padding-top: 124px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.black-wrapper{
+    background: #000000;
+    padding-top: 28px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__logo{
+    margin-right: 121px;
+}
+.menu {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.menu a{
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 32px 0 32px 0;
+    margin-right: 28px;
+    transition: all .3s;
+    display: block;
+}
+
+ .menu a:last-child {
+    margin-right: 0;
+}
+.menu a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    display: none;
+}
+
+.menu a:hover::after{
+    content: '';
+    display: block;
+}
+
+/* .menu a:hover{
+    border-bottom: 4px solid #FFFFFF;
+} */
+
+.text__info{
+    max-width: 592px;
+    color: #ffffff;
+}
+.text__info h1{
+    font-size: 90px;
+    margin-top: 0;
+}
+.text__info__description{
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+}
+.text__info__company{
+    padding-bottom: 80px;
+    position: relative;
+    font-size: 18px;
+    line-height: 160%;
+}
+.text__info__company::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: #FFFFFF;
+    opacity: 0.4;
+    bottom: 40px;
+    height: 1px;
+    left: 0;
+}
+.text__info__icon{
+    margin-bottom: 40px;
+}
+.main__info{
+    display: flex;
+    justify-content: space-between;
+}
+.img__info{
+    position: absolute;
+    right: 0;
+    top: 124px;
+}
+.text__info__dev{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+}
+.result__text{
+    max-width: 496px;
+    color: #000000;
+}
+.result__text__title{
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+.result__text__title__description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+}
+.grey__wrapper{
+    background: #ECEEF2;
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+.result__img{
+    margin-right: 128px;
+}
+.wrapper{
+    color: #000000;
+    padding: 80px 0;
+}
+.dev__info__text{
+    max-width: 256px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+}
+.dev__info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.main__list_1,
+.main__list_2,
+.main__list_3{
+    max-width: 784px;
+    display: flex;
+    align-items: center;
+}
+.main__list_1,
+.main__list_2{
+    margin-bottom: 40px;
+}
+.main__list_3_img,
+.main__list_2_img,
+.main__list_1_img{
+    margin-right: 38px;
+}
+.main__list_1_text_title,
+.main__list_2_text_title,
+.main__list_3_text_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    /* margin-bottom: 16px; */
+}
+.main__list_1_text_title_desription,
+.main__list_2_text_title_desription,
+.main__list_3_text_title_desription{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+}
+.form__description{
+    background: #00B4F0;
+    max-width: 49%;
+    padding: 48px 48px 71px 48px;
+    color: #ffffff;
+}
+.form{
+    border: 1px solid #00B4F0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #000000;
+    display: flex;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+}
+form{
+    padding: 48px 47px 47px 48px;
+    width: 51%;
+}
+fieldset ,input{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+legend{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+label{
+    margin-bottom: 24px;
+}
+input{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 50px;
+    outline: none;
+}
+.form__description__icon,
+.form__description-desc{
+    margin-bottom: 24px;
+}
+.form__description-desc{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+}
+.form__description_request{
+    margin-bottom: 25px;
+}
+.btn{
+    cursor: pointer;
+    background: #0D870D;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.form__description-arrow{
+    text-align: right;
+}
+
+.footer-menu a{
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 21px;
+     color: #FFFFFF;
+     opacity: 0.5;
+     margin-right: 32px;
+}
+.footer-menu a:last-child{
+    margin-right: 0;
+}
+.footer-menu a:hover{
+    opacity: 1;
+}
+.footer-menu__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-wrapper{
+    padding: 80px 0 80px 0;
+}
+.footer__logo{
+    margin-bottom: 40px;
+}
+.copyright{
+         color: #FFFFFF;
+         opacity: 0.5;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 21px;
+}
